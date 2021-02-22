@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo /usr/bin/xinit /home/pi/Xlib-demo/$1 -- :0 -nolisten tcp -nocursor &
+/home/pi/test/disablescreenblank.sh
+echo "Running"
+
+

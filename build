@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import sys
+import os
+
+sfile = sys.argv[1]
+source = "src/" + sfile + ".c"
+binary = sfile + ".b"
+compile = f"gcc -g -o {binary} {source} -lX11 -std=c99"
+print (compile)
+if os.system(compile):
+	print ('Error exit')
+	exit (1)
+os.system (f"runit {binary}")
+
