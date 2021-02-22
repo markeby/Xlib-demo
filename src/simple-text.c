@@ -170,7 +170,7 @@ main(int argc, char* argv[])
   XFlush(display);
 
   /* make a delay for a short period. */
-  sleep(4);
+  sleep(4000);
 
   /* close the connection to the X server. */
   XCloseDisplay(display);

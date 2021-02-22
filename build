@@ -5,7 +5,7 @@ import os
 
 sfile = sys.argv[1]
 source = "src/" + sfile + ".c"
-binary = sfile + ".b"
+binary = "bin/" + sfile"
 compile = f"gcc -g -o {binary} {source} -lX11 -std=c99"
 print (compile)
 if os.system(compile):
