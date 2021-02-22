@@ -141,7 +141,7 @@ main(int argc, char* argv[])
     /* containing its data in the server, and put its ID in the 'bitmap' */
     /* variable.                                                         */
     int rc = XReadBitmapFile(display, win,
-                             "icon.bmp",
+                             "/home/pi/Xlib-demo/bin/icon.bmp",
                              &bitmap_width, &bitmap_height,
                              &bitmap,
                              &hotspot_x, &hotspot_y);
